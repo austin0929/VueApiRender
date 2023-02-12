@@ -1,0 +1,32 @@
+.title{
+    font-size: 10px;
+    text-decoration: none;
+    display: block;
+    padding:0 12px;
+}
+.price{
+    padding: 0 12px;
+    display: block;
+    padding-bottom: 12px;
+}
+.wrap{
+    width: 1000px;
+    margin : auto;
+}
+.list{
+    display: inline-block;
+    width: 240px;
+    flex-wrap: wrap;
+    box-shadow: 4px 4px 20px rgb(0,0,0,.3);
+    margin: 16px;
+    border-radius: 8px;
+    height: 240px;
+    height: 300px;
+    overflow: hidden;
+}
+.image{
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+}

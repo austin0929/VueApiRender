@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+    <div id="app">
+        <div class="wrap">
+
+            <!-- v-for陣列渲染  productList為資料庫陣列 product為陣列中的物件-->
+        <div v-for="product in productList" class="list">
+             
+            <!-- v-bind縮寫為: 用途綁定style與imgStyle 當imgStyle改變 style也會改變-->
+             <div class="image" :style="imgStyle(product.images)"></div>
+            <a class="title" href="#"><h1>{{product.title}}</h1></a>
+            <span class="price">{{product.price}}</span>
+        </div>
+    </div>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.10/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.2/axios.min.js"></script>
+    <script src="all.js"></script>
+</body>
+</html>
