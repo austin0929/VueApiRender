@@ -9,17 +9,17 @@
 </head>
 <body>
     <div id="app">
-        <div class="wrap">
+        <ul class="wrap">
 
             <!-- v-for陣列渲染  productList為資料庫陣列 product為陣列中的物件-->
-        <div v-for="product in productList" class="list">
+         <li v-for="product in productList" class="list">
              
             <!-- v-bind縮寫為: 用途綁定style與imgStyle 當imgStyle改變 style也會改變-->
              <div class="image" :style="imgStyle(product.images)"></div>
             <a class="title" href="#"><h1>{{product.title}}</h1></a>
             <span class="price">{{product.price}}</span>
-        </div>
-    </div>
+         </li>
+        </ul>
     </div>
 
 
